@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Profile from './components/Profile';
+// import Message from './components/Message';
+import Counter from './components/Counter';
+import Resume from './components/Resume';
+import FunctionEvent from './components/FunctionEvent';
+import ClassEvent from './components/ClassEvent';
+import FunctionalCounter from './components/FunctionalCounter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile name = "Bintang" lastName = "Ramadhan" />
+      <Counter />
+      <Resume name = "Bintang" lastName = "Ramadhan"/>
+      <FunctionEvent />
+      <ClassEvent />
+      <FunctionalCounter />
     </div>
   );
 }
