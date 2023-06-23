@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import React from 'react';
 
 class Counter extends Component {
     constructor() {
@@ -17,10 +18,10 @@ class Counter extends Component {
 
     render() {
         return (
-            <>
+            <div>
                 <h3>Count value is: {this.state.counter}</h3>
                 <button onClick={this.increment}>Click It!</button>
-            </>
+            </div>
         )
     }
 }
